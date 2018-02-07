@@ -1,20 +1,34 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title> Chess</title>
+	<title>Chess</title>
 </head>
 <body>
 
-hello
+hello 
 <?php
 
-	$letter = $_GET["letter"];
-	$number = $_GET["number"];
+	$letter = $_GET['letter'];
+	$number = $_GET['number'];
+	
 	$counter = 1;
 
-	echo $letter . "" $number;
-	?>
+	while ($counter <= $number) {
+		if ($counter === 6) {
+			echo "6 ";
+		}		
+		else {
+			echo "$letter ";
+		  	system(escapeshellcmd("say $letter"));
+		  	flush();
+	  	}
+	  	$counter++;
+	}
 
-	goodbye
+?>
+
+
+
+goodbye
 </body>
 </html>
