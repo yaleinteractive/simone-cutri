@@ -14,17 +14,19 @@ hello
 	$counter = 1;
 
 	while ($counter <= $number) {
-		if ($counter === 6) {
-			echo "6 ";
-		}		
-		else {
-			echo "$letter ";
-		  	system(escapeshellcmd("say $letter"));
-		  	flush();
-	  	}
-	  	$counter++;
-	}
+		
+		if ($letter == 'a') {
+			echo "<img src='sfdds.jpg' width=20>";
+		}
 
+		if ($letter == 'b') {
+			echo "<img src='god.jpg' width=20>";
+		}
+
+		else { 
+			echo " $letter "}
+
+			$counter++
 ?>
 
 <P>
