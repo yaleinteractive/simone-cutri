@@ -13,15 +13,18 @@
 
     <?php
     $letter = $_GET['letter'];
+    $number = $_GET['number']
     $table = ['a','b','c','d','e','f'];
     $TableLength = count($table, COUNT_RECURSIVE);
+ 
 
     for($i = 0 ; $i < $TableLength ; $i++){
       
       if( $letter != $table[$i] ){
-        echo $table[$i];
+        echo "<img src='$table[$i].png';>";
       } else {
-        echo 'sup';  
+        echo "<img src='$table[$i].png';>";
+        break;
       };
     };
     ?>
