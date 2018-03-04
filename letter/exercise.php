@@ -32,7 +32,6 @@
 
     // Do what's in the {}, $number times
     $counter = 1;
-
     while ($counter <= $number) 
 
     {
@@ -43,7 +42,7 @@
       echo "<img src='$letter.png' style='filter: hue-rotate($number);'> ";
     }else if($letter === "C"){
       echo "<img src='a.png' style='filter: hue-rotate($number);'> ";
-      echo "<img src='b.png' style='filter: hue-rotate($number);'> ";
+      echo "f style='filter: hue-rotate($number);'> ";
       echo "<img src='$letter.png' style='filter: hue-rotate($number);'> ";
     }else if($letter === "D"){
       echo "<img src='a.png' style='filter: hue-rotate($number);'> ";
