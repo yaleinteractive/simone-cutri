@@ -10,9 +10,19 @@
     to {filter: hue-rotate(300deg);}
     }
 
+  @keyframes forza {
+    from { transform: translate(0px, 0px);}
+    to { transform: translate(0px, 600px) }
+  }  
+
   .one {
     animation-name: example;
-    animation-duration: 20s;
+    animation-duration: 20s;  
+  }
+
+  .due {
+     animation-name: forza;
+    animation-duration: 5s; 
   }
 
   </style>
@@ -46,9 +56,9 @@
         for($i = 0 ; $i < $TableLength ; $i++){
       
             if( $letter != $table[$i] ){
-              echo "<img src='$table[$i].png' class='one'>";
+              echo "<img src='$table[$i].png' class='one'; class='due'; >";
             } else {
-               echo "<img src='$table[$i].png' class='one'>";
+               echo "<img src='$table[$i].png' class='due';  >";
                break;
             };
 
