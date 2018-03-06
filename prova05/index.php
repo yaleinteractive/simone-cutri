@@ -12,7 +12,7 @@
 
   @keyframes forza {
     from { transform: translate(0px, 0px);}
-    to { transform: translate(0px, 600px) }
+    to { transform: translate(0px, 150vh) }
   }  
 
   .one {
@@ -56,7 +56,7 @@
         for($i = 0 ; $i < $TableLength ; $i++){
       
             if( $letter != $table[$i] ){
-              echo "<img src='$table[$i].svg' width='$number'; class='one'; >";
+              echo "<img src='$table[$i].svg' width='$number'; class='due'; >";
             } else {
                echo "<img src='$table[$i].svg' width='$number'; class='due';  >";
                break;

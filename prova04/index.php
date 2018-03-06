@@ -7,22 +7,12 @@
 
   @keyframes example {
     from {filter: hue-rotate(20deg);}
-    to {filter: hue-rotate(800deg);}
+    to {filter: hue-rotate(300deg);}
     }
-
-  @keyframes forza {
-    from { transform: translate(0px, 0px);}
-    to { transform: translate(0px, 600px) }
-  }  
 
   .one {
     animation-name: example;
-    animation-duration: 20s;  
-  }
-
-  .due {
-     animation-name: forza;
-    animation-duration: 5s; 
+    animation-duration: 20s;
   }
 
   </style>
@@ -37,6 +27,8 @@
     <?php
     $letter = $_GET['letter'];
     $number = $_GET['number'];
+
+    $size = $number/20; 
 
     $table = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
     $TableLength = count($table, COUNT_RECURSIVE);
@@ -56,9 +48,9 @@
         for($i = 0 ; $i < $TableLength ; $i++){
       
             if( $letter != $table[$i] ){
-              echo "<img src='$table[$i].svg' width='$number'; class='one'; >";
+              echo "<img src='$table[$i].svg' width='$size'; class='one'>";
             } else {
-               echo "<img src='$table[$i].svg' width='$number'; class='due';  >";
+               echo "<img src='$table[$i].svg' width='$size'; class='one'>";
                break;
             };
 
