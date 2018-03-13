@@ -1,0 +1,7 @@
+Databese: Calendar
+	|_ Tabe: Events
+		|_ id: integer (auto-increment)
+		|_ titel: string - MySQL calls this VARCHAR (255)
+		|_ date: date
+		|_ time: time
+		|_ description: text 
