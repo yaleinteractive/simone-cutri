@@ -1,11 +1,13 @@
 body{
 	font-family: sans-serif;
-	font-size: 3em;
+	background-color: red;
 
 }
 
-#me {
-	border: 2px solid black;
-	width: 100vw;
-	height: 20vh;
+h2 {
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
 }

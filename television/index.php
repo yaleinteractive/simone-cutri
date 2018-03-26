@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Calendar</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -18,17 +19,16 @@
   // FROM events - always specify the table name
   // ORDER BY - always specify an order and use ASC or DESC
   // WHERE - a condition
-  $sql = "SELECT * FROM palimpsest ORDER BY time DESC";
+  $sql = "SELECT * FROM palimpsest ORDER BY time ASC";
   $result = $conn->query($sql);
   // If there is at least 1 row in the result, show all the rows
   if ($result->num_rows > 0) {
       // Get one row at a time until we're out of rows
       while ($row = $result->fetch_assoc()) {
-          echo "<div id=me>" ;
           echo "<h2>";
-          echo "{$row['time']}. ";
+          echo "{$row['Time']} ";
           echo "<a href='event.php?id={$row['id']}'>";
-          echo $row['title'];
+          echo "{$row['Title']}";
           echo "</a>";
           echo "</h2>";
       }
