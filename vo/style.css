@@ -1,10 +1,28 @@
 body {
 	background-color: black;
+
+}
+@font-face {
+	font-family: 'atlas';
+	src: url(atlas.otf);
 }
 
+@font-face {
+	font-family: 'lyon';
+	src: url(Finura-Italic.otf);
+}
+
+@font-face {
+	font-family: 'at';
+	src: url(atlaslight.otf);
+}
 h2 {
 	color: white;
-	font-family: sans-serif;
+	font-family: 'at';
+	font-weight: lighter;
+	font-size: 1.6em;
+	text-align: center;
+	margin-bottom: 0;
 }
 
 form {
@@ -13,12 +31,28 @@ form {
 }
 
 p{
+	font-family: 'atlas';
 	color: white;
 	font-family: sans-serif;
 }
+button{
+	visibility: hidden;
+}
 
-form{
+#email{
 	margin: 0 auto;
+	width: 25vw;
+	margin-top: 48vh;
+	align-items: center;
+	
+}
+
+#first{
+	width: 22vw;
+	margin-bottom: 2%;
+	float: left;
+	background-color: black;
+	border: 0px;
 }
 
 #main {
@@ -26,17 +60,76 @@ form{
 	margin: 0 auto;
 }
 
-input {
-	background-color: black;
-    margin-bottom: 2%;
-    color: white;
-    border: 1.5px solid white;
+input{
+	color:white;
+	font-family: 'atlas';
+	text-align: center;
+	padding: 2%;
+	float: none;
+	display: block;
+	 display: flex;
 }
 
-textarea {
-	 background-color: black;
-    width: 55vw;
-    height: 20vh;
-    color: white;
-    border: 1.5px solid white;
+input::placeholder {
+  color: grey;
+  font-family: 'atlas';
+  text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+#question{
+	margin-top: 25vh;
+}
+
+#text{
+	background-color: black;
+	width: 70vw;
+	height: 20vh;
+	margin: 0 auto;
+	margin-top: 2%;
+	border: 0px;
+	resize: none;
+}
+
+textarea#text{
+	color:white;
+	font-family: 'atlas';
+	font-size: 0.8em;
+	line-height: 1.4em;
+	text-align: center;
+	display: flex;
+}
+
+#submit{
+	background-color: black;
+	padding: 0.7%;
+	margin: 0% auto;
+}
+
+#finish {
+	margin-top: 25vh;
+	color:white;
+	font-family: 'atlas';
+	font-size: 1.6em;
+	line-height: 1.4em;
+	text-align: center;
+}
+
+h3{
+	color:white;
+	font-family: 'atlas';
+	font-size: 0.8em;
+	line-height: 1.2em;
+	text-align: center;
+}
+
+#wrapper{
+	width: 38vw;
+	margin: 0% auto;
 }
