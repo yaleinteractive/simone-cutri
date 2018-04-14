@@ -54,7 +54,7 @@
                break;
             };
 
-            usleep(100000);
+            usleep(1000);
             flush();
 
     };
@@ -65,5 +65,11 @@
   </p>
 
 </body>
-
+  <div class="formbox">
+    <form name="form" action="" method="get">
+        <input type="text" name="letter" maxlength="1" >
+        <input type="text" name="number" maxlength="8" >
+        <a href="table.php"><input class="button" type="submit"></a>
+    </form>
+  </div>
 </html>

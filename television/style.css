@@ -1,8 +1,12 @@
 body{
 	font-family: sans-serif;
 	background-color: lightgrey;
-	background-image: url(grid-01.svg);
+}
 
+.grid {
+	background-image: url(grid-01.svg);
+	height: 100%;
+	width: auto;
 }
 
 h2 {

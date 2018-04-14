@@ -25,6 +25,36 @@
     animation-duration: 5s; 
   }
 
+   .formbox {
+        position:fixed;
+        bottom:0px;
+        left:0;
+        width:100vw;
+        height:25px;
+        z-index:100;
+      }
+      form {
+        position:fixed;
+        bottom:5px;
+        left:10px;
+        padding:2px;
+
+      }
+      input {
+        width:  80px;
+        height: 30px;
+        border: 3px solid black;
+        
+      }
+      input:focus {
+        color:initial;
+        outline:none;
+      }
+      .button {
+        border: 3px solid black;
+      }
+      
+
   </style>
 <head>
 
@@ -62,7 +92,7 @@
                break;
             };
 
-            usleep(100000);
+            usleep(1000);
             flush();
 
     };
@@ -73,5 +103,13 @@
   </p>
 
 </body>
+
+  <div class="formbox">
+    <form name="form" action="" method="get">
+        <input type="text" name="letter" maxlength="1" >
+        <input type="text" name="number" maxlength="8" >
+        <a href="table.php"><input class="button" type="submit"></a>
+    </form>
+  </div>
 
 </html>

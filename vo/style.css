@@ -1,0 +1,42 @@
+body {
+	background-color: black;
+}
+
+h2 {
+	color: white;
+	font-family: sans-serif;
+}
+
+form {
+	color: white;
+	font-family: sans-serif;
+}
+
+p{
+	color: white;
+	font-family: sans-serif;
+}
+
+form{
+	margin: 0 auto;
+}
+
+#main {
+	width: 98vw;
+	margin: 0 auto;
+}
+
+input {
+	background-color: black;
+    margin-bottom: 2%;
+    color: white;
+    border: 1.5px solid white;
+}
+
+textarea {
+	 background-color: black;
+    width: 55vw;
+    height: 20vh;
+    color: white;
+    border: 1.5px solid white;
+}

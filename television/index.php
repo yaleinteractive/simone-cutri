@@ -41,5 +41,5 @@
   // Close the databse connection
   $conn->close();
   ?>
-
+<div class="grid"> </div>
 </body>
