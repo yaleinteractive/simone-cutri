@@ -24,7 +24,6 @@
                                VALUES('$email', '$text')";
     // Run the SQL
     $result = $conn->query($sql);
-    echo "<h3 id='finish'>Thank you and Welcome to the MemoryBank</h2>";
   };
 
 $mailto=$_POST['email'];

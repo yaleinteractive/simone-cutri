@@ -53,7 +53,7 @@ $sql = "SELECT * FROM questions ORDER BY RAND() LIMIT 0,1;";
   $conn->close();
   ?>
 
-<form method="post" id="second" action="email.php" autocomplete="off">
+<form method="post" id="second" action="form_process.php" autocomplete="off">
 <textarea type="text" name="text" id="text" contenteditable="true"> </textarea>
 <input type="hidden" name="email" value="<?php echo $_POST['email'];?>" > </br>
 <input type="submit" value="SEND" id="submit">

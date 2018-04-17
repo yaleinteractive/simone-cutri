@@ -1,5 +1,14 @@
+
+@keyframes gradi { 
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+
 body {
-	background-color: black;
+background: linear-gradient(95deg, #000000, #151925, #01071a);
+background-size: 800% 800%;
+animation: gradi 80s ease infinite;
 
 }
 @font-face {
@@ -18,9 +27,9 @@ body {
 }
 h2 {
 	color: white;
-	font-family: 'at';
+	font-family: serif;
 	font-weight: lighter;
-	font-size: 1.6em;
+	font-size: 3.5em;
 	text-align: center;
 	margin-bottom: 0;
 }
@@ -51,7 +60,7 @@ button{
 	width: 22vw;
 	margin-bottom: 2%;
 	float: left;
-	background-color: black;
+	background: none;
 	border: 0px;
 }
 
@@ -88,9 +97,9 @@ textarea:focus {
 }
 
 #text{
-	background-color: black;
+	background:none;
 	width: 70vw;
-	height: 20vh;
+	height: 30vh;
 	margin: 0 auto;
 	margin-top: 2%;
 	border: 0px;
@@ -99,15 +108,16 @@ textarea:focus {
 
 textarea#text{
 	color:white;
-	font-family: 'atlas';
-	font-size: 0.8em;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 1.4em;
 	line-height: 1.4em;
 	text-align: center;
 	display: flex;
 }
 
 #submit{
-	background-color: black;
+	background:none;
 	padding: 0.7%;
 	margin: 0% auto;
 }
@@ -123,10 +133,12 @@ textarea#text{
 
 h3{
 	color:white;
-	font-family: 'atlas';
-	font-size: 0.8em;
-	line-height: 1.2em;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 1em;
+	line-height: 1.25em;
 	text-align: center;
+	letter-spacing: 0.2px;
 }
 
 h4{
@@ -138,6 +150,9 @@ h4{
 }
 
 #wrapper{
-	width: 38vw;
+	width: 55vw;
 	margin: 0% auto;
+	margin-top: 5%;
 }
+
+

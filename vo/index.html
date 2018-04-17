@@ -7,10 +7,9 @@
 
 <body>
 
-
   <?php
   include "connect.php";
-
+  include "insert.php";
   // Format today's date as YYYY-MM-DD
  
   // Run a SQL query and store the results in $result
@@ -20,8 +19,6 @@
   // ORDER BY - always specify an order and use ASC or DESC
   // WHERE - a condition
   ?>
-
-
 <form id="email" method="post" action="form2.php" autocomplete="off">
     <input id="first" type="text" name="email" placeholder="Insert your email">
     <button type="button" onclick="return myFunc1()"> </button>
