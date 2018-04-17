@@ -129,6 +129,14 @@ h3{
 	text-align: center;
 }
 
+h4{
+	color:rgb(0.255.0);
+	font-family: 'atlas';
+	font-size: 0.5em;
+	line-height: 1.2em;
+	text-align: left;
+}
+
 #wrapper{
 	width: 38vw;
 	margin: 0% auto;

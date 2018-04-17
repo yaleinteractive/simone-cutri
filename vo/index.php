@@ -9,7 +9,7 @@
 
   <?php
   include "connect.php";
-  include "insert.php";
+
   // Format today's date as YYYY-MM-DD
  
   // Run a SQL query and store the results in $result
