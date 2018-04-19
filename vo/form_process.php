@@ -7,18 +7,26 @@
 
 <body>
 
+
   <?php
   include "connect.php";
+  include "insert.php";
 
 
 $from="memorybank@gmail.com";
 $email=$_POST['email'];
 $subject="memorybank";
-$message=$_POST['text'];
+$message = $query; 
+
+
+$query .= "SELECT text FROM user ORDER BY time ASC";
+
 
 mail($email, $subject, $message,"From:".$from);
 
 print "<h2 id='question'> Thank you $email </br> and Welcome to the MemoryBank </h2>";
+
+$conn->close();
 
 ?>
 

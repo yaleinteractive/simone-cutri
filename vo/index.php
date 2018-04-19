@@ -19,11 +19,12 @@
   // FROM events - always specify the table name
   // ORDER BY - always specify an order and use ASC or DESC
   // WHERE - a condition
+   $conn->close();
   ?>
 
 
-<form id="email" method="post" action="form2.php" autocomplete="off">
-    <input id="first" type="text" name="email" placeholder="Insert your email">
+<form id="email" method="get" action="form2.php" autocomplete="off">
+    <input id="first" type="text" name="email" placeholder="Insert your email" autofocus>
     <button type="button" onclick="return myFunc1()"> </button>
 </form>
 

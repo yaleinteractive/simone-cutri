@@ -26,31 +26,6 @@
     $result = $conn->query($sql);
   };
 
-$mailto=$_POST['email'];
-$mailmsg=$_POST['text'];
-$mailsub="memorybank";
-
- require 'PHPMailerAutoload.php';
- $mail = new PHPMAiler();
- $mail ->IsSmtp();
- $mail ->SMTPDebug = 1;
- $mail ->SMTPSecure = 'ssl';
- $mail ->Host = "smtp.gmail.com";
- $mail ->Port = 465 // or 587
- $mail ->IsHTML(true);
- $mail ->Username = "simone.cutri1@gmail.com";
- $mail ->Password = "enomis92";
- $mail ->SetFrom("memorybank"); 
- $mail ->Subject = $mailsub;
- $mail ->Body = $mailmsg;
- $mail ->AddAdress($mailto);
-
- if(!$mail->Send()){
-  echo "Mail not sent";
- }
- else {
-  echo "yes";
- }
 
 
 ?>
