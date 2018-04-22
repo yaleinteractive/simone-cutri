@@ -10,6 +10,7 @@
 <body>
   <?php
   include "connect.php";
+    include "insert.php";
  
 $email = $_GET['email'];
 
@@ -25,13 +26,13 @@ $sql = "SELECT * FROM questions ORDER BY RAND() LIMIT 0,1;";
           echo "</h2>";
       }
   } else {
-      echo "No events";
+      echo "";
   }
   // Close the databse connection
   $conn->close();
   ?>
 
-<form enctype="multipart/form-data" method="post" id="second" action="form_process.php" autocomplete="off">
+<form enctype="multipart/form-data" method="post" id="second" action="different.php" autocomplete="off">
 <textarea type="text" name="text" id="text" contenteditable="true" autofocus> </textarea>
 <input type="hidden" name="email" value="<?php echo $_GET ['email'];?>" > </br>
 <input type="submit" value="SEND" id="submit">

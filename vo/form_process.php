@@ -16,10 +16,12 @@
 $from="memorybank@gmail.com";
 $email=$_POST['email'];
 $subject="memorybank";
-$message = $query; 
+$message = "<h1 style='color:#f40;'>" ;
+$message =  $_POST['text'] ;
 
 
-$query .= "SELECT text FROM user ORDER BY time ASC";
+
+//$query .= "SELECT text FROM user ORDER BY time ASC";
 
 
 mail($email, $subject, $message,"From:".$from);
