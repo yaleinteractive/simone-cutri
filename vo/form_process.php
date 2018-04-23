@@ -16,8 +16,7 @@
 $from="memorybank@gmail.com";
 $email=$_POST['email'];
 $subject="memorybank";
-$message = "<h1 style='color:#f40;'>" ;
-$message =  $_POST['text'] ;
+$message = "Thank you! $email ,You will receive an email now and then: 1 week from today, 2 weeks from today, 1 month from today, 2 months from today, 4 months from today, 8 months from today,  1 year from today, 2 years from today, 4 years from today, 8 years from today, 16 years from today, 32 years from today, 64 years from today, 128 years from today, 256 years from today, ... " ;
 
 
 

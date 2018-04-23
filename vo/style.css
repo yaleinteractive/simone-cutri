@@ -102,8 +102,8 @@ textarea:focus {
 
 #question{
 	margin: 0 auto;
-	margin-top: 15vh;
-	width: 55vw;
+	margin-top: 9%;
+	width: 65%;
 }
 
 #text{
@@ -178,7 +178,7 @@ h5{
 	color: white;
 	font-family: sans-serif;
 	font-weight: lighter; 
-	font-size: 1.5em;
+	font-size: 1.2em;
 	float: left;
 	margin: 0%;
 	padding:0%;
@@ -192,7 +192,7 @@ h5{
 }
 
 #please {
-	width: 85%;
+	width: 75%;
 	margin:  0% auto;
 	margin-top: 5%;
 	height: 500px;
@@ -201,7 +201,14 @@ h5{
 #title{
 	width: 80%;
 	margin: 0% auto;
-		margin-top: 5%;
+	margin-top: 5%;
 }
 
+#time{
+	font-family: 'atlas';
+	color: grey;
+	font-size: 0.2em;
+	float: left;
+	position: absolute;
+}
 
