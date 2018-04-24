@@ -21,15 +21,18 @@ $sql = "SELECT * FROM user ORDER BY time";
       // Get one row at a time until we're out of rows
        while ($row = $result->fetch_assoc()) {
           echo "<span id='final'>";
-            echo "<span id='time'>";
-          echo "{$row['time']}&nbsp";  
-          echo "</span>";
+         // echo "<span id='time'>";
+         // echo "{$row['time']}&nbsp";  
+         // echo "</span>";
           echo "{$row['text']}&nbsp";
           echo "</span>";
       }
   } else {
       echo "";
   }
+
+
+
 
   $conn->close();
 ?>

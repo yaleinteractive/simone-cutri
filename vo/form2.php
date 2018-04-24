@@ -11,7 +11,6 @@
   <?php
   include "connect.php";
 
- 
 $email = $_GET['email'];
 
 

@@ -178,7 +178,7 @@ h5{
 	color: white;
 	font-family: sans-serif;
 	font-weight: lighter; 
-	font-size: 1.2em;
+	font-size: 2.8em;
 	float: left;
 	margin: 0%;
 	padding:0%;
@@ -187,15 +187,15 @@ h5{
 #time{
 	color: white;
 	font-family: sans-serif;
-	font-size: 1em;
+	font-size: 2.5em;
 	float: left;
 }
 
 #please {
-	width: 75%;
+	width: 91%;
 	margin:  0% auto;
-	margin-top: 5%;
 	height: 500px;
+	margin-bottom: 10%;
 	overflow: scroll;
 }
 #title{
@@ -206,9 +206,11 @@ h5{
 
 #time{
 	font-family: 'atlas';
-	color: grey;
-	font-size: 0.2em;
+	color: silver;
+	font-size: 0.005em;
 	float: left;
-	position: absolute;
+	margin-top: 0.6%;
+	margin-left: 0%;
+
 }
 
