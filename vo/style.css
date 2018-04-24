@@ -194,7 +194,7 @@ h5{
 #please {
 	width: 91%;
 	margin:  0% auto;
-	height: 500px;
+	height: 520px;
 	margin-bottom: 10%;
 	overflow: scroll;
 }
@@ -207,7 +207,7 @@ h5{
 #time{
 	font-family: 'atlas';
 	color: silver;
-	font-size: 0.005em;
+	font-size: 1em;
 	float: left;
 	margin-top: 0.6%;
 	margin-left: 0%;

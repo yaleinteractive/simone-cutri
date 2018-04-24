@@ -1,6 +1,6 @@
 <?php
-$servername = "ns40.domaincontrol.com";
-$username = "v9opzo5j76tw";
+$servername = "soundgenerator.club";
+$username = "simonecutri";
 $password = "Enomis1992!";
 $dbname = "memoryvoyager";
 // Create connection

@@ -53,7 +53,7 @@ $sql = "SELECT * FROM user ORDER BY time";
           echo "{$row['text']}";
           echo "</span>";
           echo "<p id='time'>";
-          echo "{$row['id']}&nbsp";  
+          echo "&nbsp{$row['id']}&nbsp";  
           echo "</p>";
           
       }
